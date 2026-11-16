@@ -364,8 +364,8 @@ export const Menu = () => {
         )}
       >
         <div className="h-12 flex items-center justify-between px-4 border-b border-bolt-elements-borderColor bg-bolt-elements-background-depth-2 rounded-tr-2xl">
-          <div className="text-bolt-elements-textPrimary font-medium"></div>
-          <div className="flex items-center gap-3">
+          <div className="text-bolt-elements-textPrimary font-medium w-[190px] shrink-0" aria-hidden="true"></div>
+          <div className="flex items-center gap-2 min-w-0">
             <HelpButton onClick={() => setIsDocumentationOpen(true)} />
             <span className="font-medium text-sm text-bolt-elements-textPrimary truncate">
               {profile?.username || 'Guest User'}
