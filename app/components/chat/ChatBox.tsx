@@ -260,7 +260,11 @@ export const ChatBox: React.FC<ChatBoxProps> = (props) => {
         </div>
       )}
       <div
-        className={classNames('relative shadow-xs border border-bolt-elements-borderColor backdrop-blur rounded-lg')}
+        className={classNames(
+          'relative shadow-xs border border-bolt-elements-borderColor backdrop-blur rounded-lg',
+          'transition-[border-color,box-shadow] duration-150',
+          'focus-within:border-accent-500 focus-within:ring-2 focus-within:ring-accent-500/20',
+        )}
       >
         <textarea
           ref={props.textareaRef}
