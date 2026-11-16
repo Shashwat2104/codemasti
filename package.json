@@ -1,14 +1,14 @@
 {
-  "name": "bolt",
-  "description": "An AI Agent",
+  "name": "ai-app-builder",
+  "description": "AI-powered full-stack app builder in the browser",
   "private": true,
   "license": "MIT",
   "sideEffects": false,
   "type": "module",
   "version": "1.0.0",
   "author": {
-    "name": "bolt.diy team",
-    "email": "maintainers@bolt.diy"
+    "name": "Shashwat2104",
+    "email": "shashwat.mahendra@techdome.net.in"
   },
   "scripts": {
     "deploy": "pnpm run build && wrangler deploy",
