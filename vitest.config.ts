@@ -79,6 +79,15 @@ const DOM_TESTS = [
  * in DOM_TESTS-adjacent positions but excluded here for both projects, matching
  * the previous behaviour exactly.
  */
+/*
+ * tests/performance asserts wall-clock budgets (frame times, ms per render).
+ * A shared CI runner perturbs those at random, so they would fail the
+ * functional `pnpm test` job for reasons unrelated to the change. They run in
+ * their own "Performance Tests" job via `pnpm perf:test`, which names the
+ * directory on the command line and so switches them back on here.
+ */
+const PERF_REQUESTED = process.argv.some((arg) => arg.includes('tests/performance'));
+
 const EXCLUDE = [
   '**/node_modules/**',
   '**/dist/**',
@@ -89,6 +98,7 @@ const EXCLUDE = [
   '**/tests/e2e/**', // Exclude e2e tests that require Playwright
   'app/components/chat/Markdown.spec.ts', // Exclude - imports cause issues with import.meta.hot
   'app/lib/stores/workbench.spec.ts', // Exclude - imports cause issues with import.meta.hot
+  ...(PERF_REQUESTED ? [] : ['**/tests/performance/**']), // Wall-clock budgets run only via `pnpm perf:test`
 ];
 
 const SHARED = {
