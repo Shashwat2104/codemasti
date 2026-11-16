@@ -1,5 +1,5 @@
-appId: com.shashwat2104.aiappbuilder
-productName: Bolt Local
+appId: com.shashwat2104.codemasti
+productName: CodeMasti
 directories:
   buildResources: build
   output: dist
@@ -55,8 +55,8 @@ npmRebuild: false
 
 publish:
   provider: github
-  owner: Derek-X-Wang
-  repo: bolt.local
+  owner: Shashwat2104
+  repo: codemasti
   private: true
   releaseType: release
 

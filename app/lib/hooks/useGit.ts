@@ -65,7 +65,7 @@ export function useGit() {
       const headers: {
         [x: string]: string;
       } = {
-        'User-Agent': 'ai-app-builder',
+        'User-Agent': 'codemasti',
       };
 
       const auth = lookupSavedPassword(url);

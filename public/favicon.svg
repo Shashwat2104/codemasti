@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
-  <rect width="16" height="16" rx="4" fill="url(#g)"/>
-  <path d="M8 3l1.2 2.8L12 7l-2.8 1.2L8 11 6.8 8.2 4 7l2.8-1.2L8 3Z" fill="#fff"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="CodeMasti"><defs><linearGradient id="cm" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FB923C"/><stop offset="1" stop-color="#DB2777"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#cm)"/><path d="M12.5 10 7 16l5.5 6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.5 10 25 16l-5.5 6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.2 18.6c1.6 1.8 4 1.8 5.6 0" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/><circle cx="14" cy="14.2" r="1.1" fill="#fff"/><circle cx="18" cy="14.2" r="1.1" fill="#fff"/></svg>

@@ -1,4 +1,4 @@
-site_name: AI App Builder Docs
+site_name: CodeMasti Docs
 site_dir: ../site
 theme:
   name: material
@@ -31,25 +31,25 @@ theme:
     repo: fontawesome/brands/github
   # logo: assets/logo.png
   # favicon: assets/logo.png
-repo_name: AI App Builder
-repo_url: https://github.com/Shashwat2104/ai-app-builder
+repo_name: CodeMasti
+repo_url: https://github.com/Shashwat2104/codemasti
 edit_uri: ''
 
 extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/Shashwat2104/ai-app-builder
-      name: AI App Builder
+      link: https://github.com/Shashwat2104/codemasti
+      name: CodeMasti
     - icon: fontawesome/brands/discourse
       link: https://thinktank.ottomator.ai/
-      name: AI App Builder Discourse
+      name: CodeMasti Discourse
     - icon: fontawesome/brands/x-twitter
       link: https://x.com/bolt_diy
-      name: AI App Builder on X
+      name: CodeMasti on X
     - icon: fontawesome/brands/bluesky
-      link: https://bsky.app/profile/AI App Builder
-      name: AI App Builder on Bluesky
+      link: https://bsky.app/profile/CodeMasti
+      name: CodeMasti on Bluesky
 
 extra_javascript:
   - javascripts/theme-sync.js

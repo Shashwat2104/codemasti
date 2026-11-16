@@ -19,6 +19,7 @@
 }
 
 .PromptEffectContainer {
+  display: none; // decorative animated border retired; focus ring on the input carries state
   --prompt-container-offset: 50px;
   --prompt-line-stroke-width: 1px;
   position: absolute;

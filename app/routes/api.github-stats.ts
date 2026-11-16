@@ -26,7 +26,7 @@ async function githubStatsLoader({ request, context }: { request: Request; conte
       headers: {
         Accept: 'application/vnd.github.v3+json',
         Authorization: `Bearer ${githubToken}`,
-        'User-Agent': 'ai-app-builder-app',
+        'User-Agent': 'codemasti-app',
       },
     });
 
@@ -52,7 +52,7 @@ async function githubStatsLoader({ request, context }: { request: Request; conte
           headers: {
             Accept: 'application/vnd.github.v3+json',
             Authorization: `Bearer ${githubToken}`,
-            'User-Agent': 'ai-app-builder-app',
+            'User-Agent': 'codemasti-app',
           },
         },
       );
@@ -79,7 +79,7 @@ async function githubStatsLoader({ request, context }: { request: Request; conte
             headers: {
               Accept: 'application/vnd.github.v3+json',
               Authorization: `Bearer ${githubToken}`,
-              'User-Agent': 'ai-app-builder-app',
+              'User-Agent': 'codemasti-app',
             },
           });
 

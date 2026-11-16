@@ -16,7 +16,7 @@ fi
 # Set default values for required environment variables if not in GitHub Actions
 if [ -z "$GITHUB_ACTIONS" ]; then
     : "${GITHUB_SERVER_URL:=https://github.com}"
-    : "${GITHUB_REPOSITORY:=Shashwat2104/ai-app-builder}"
+    : "${GITHUB_REPOSITORY:=Shashwat2104/codemasti}"
     : "${GITHUB_OUTPUT:=/tmp/github_output}"
     touch "$GITHUB_OUTPUT"
 

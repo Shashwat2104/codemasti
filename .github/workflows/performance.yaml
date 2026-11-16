@@ -161,7 +161,7 @@ jobs:
       - name: Commit baseline if changed
         run: |
           git config user.name "Performance Bot"
-          git config user.email "perf-bot@AI App Builder"
+          git config user.email "perf-bot@CodeMasti"
           git add .performance-history/ || true
           git commit -m "chore: update performance baseline [skip ci]" || true
           git push || true

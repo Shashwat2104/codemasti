@@ -91,7 +91,7 @@ jobs:
               | Latest commit | ${{ github.sha }} |
               | Preview URL | ${deployUrl} |
 
-              Built with ❤️ by [AI App Builder](https://AI App Builder)
+              Built with ❤️ by [CodeMasti](https://CodeMasti)
               `;
             } else {
               commentBody = `ℹ️ Preview deployment not configured
@@ -105,7 +105,7 @@ jobs:
               - \`CLOUDFLARE_API_TOKEN\` secret
               - \`CLOUDFLARE_ACCOUNT_ID\` secret
 
-              Built with ❤️ by [AI App Builder](https://AI App Builder)
+              Built with ❤️ by [CodeMasti](https://CodeMasti)
               `;
             }
 

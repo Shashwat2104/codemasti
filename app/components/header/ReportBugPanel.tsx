@@ -1,7 +1,7 @@
 import * as Dialog from '@radix-ui/react-dialog';
 import { Bug, ExternalLink, X } from 'lucide-react';
 
-const BUG_REPORT_URL = 'https://github.com/Shashwat2104/ai-app-builder/issues/new?template=bug_report.yml';
+const BUG_REPORT_URL = 'https://github.com/Shashwat2104/codemasti/issues/new?template=bug_report.yml';
 
 interface ReportBugPanelProps {
   open: boolean;
@@ -22,7 +22,7 @@ export function ReportBugPanel({ open, onClose }: ReportBugPanelProps) {
               <div className="min-w-0">
                 <Dialog.Title className="truncate text-sm font-semibold">Report a bug</Dialog.Title>
                 <Dialog.Description className="truncate text-xs text-bolt-elements-textSecondary">
-                  Help us improve AI App Builder
+                  Help us improve CodeMasti
                 </Dialog.Description>
               </div>
             </div>
