@@ -7,7 +7,10 @@ import { FirstRunOnboarding } from '~/components/onboarding/FirstRunOnboarding';
 import BackgroundRays from '~/components/ui/BackgroundRays';
 
 export const meta: MetaFunction = () => {
-  return [{ title: 'AI App Builder' }, { name: 'description', content: 'AI App Builder: build full-stack apps with an AI assistant' }];
+  return [
+    { title: 'AI App Builder' },
+    { name: 'description', content: 'AI App Builder: build full-stack apps with an AI assistant' },
+  ];
 };
 
 export const loader = () => Response.json({});

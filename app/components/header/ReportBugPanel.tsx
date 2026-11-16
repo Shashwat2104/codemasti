@@ -41,8 +41,8 @@ export function ReportBugPanel({ open, onClose }: ReportBugPanelProps) {
           <div className="flex flex-1 flex-col items-start justify-center px-8 py-12 sm:px-14">
             <p className="mb-2 text-lg font-semibold">Found something that isn’t working?</p>
             <p className="mb-6 max-w-lg text-sm leading-6 text-bolt-elements-textSecondary">
-              Bug reports are submitted through GitHub. Continue there to describe the problem and send it to the
-              AI App Builder team.
+              Bug reports are submitted through GitHub. Continue there to describe the problem and send it to the AI App
+              Builder team.
             </p>
             <a
               href={BUG_REPORT_URL}

@@ -141,6 +141,69 @@ export default defineConfig((config) => {
       ],
     },
     environments: {
+      ssr: {
+        /*
+         * The SSR environment runs inside workerd and otherwise discovers these
+         * dependencies lazily on the first request. Each discovery triggers a
+         * re-optimize + reload mid-request, which surfaces as errors such as
+         * "No providers registered" on a first-time `pnpm run dev`. Pre-bundling
+         * them up front makes the first load stable.
+         */
+        optimizeDeps: {
+          include: [
+          '@ai-sdk/amazon-bedrock',
+          '@ai-sdk/anthropic',
+          '@ai-sdk/cerebras',
+          '@ai-sdk/cohere',
+          '@ai-sdk/deepseek',
+          '@ai-sdk/fireworks',
+          '@ai-sdk/google',
+          '@ai-sdk/mcp',
+          '@ai-sdk/mcp/mcp-stdio',
+          '@ai-sdk/mistral',
+          '@ai-sdk/openai',
+          '@modelcontextprotocol/sdk/client/streamableHttp.js',
+          '@nanostores/react',
+          '@octokit/rest',
+          '@openrouter/ai-sdk-provider',
+          '@radix-ui/react-checkbox',
+          '@radix-ui/react-dialog',
+          '@radix-ui/react-dropdown-menu',
+          '@radix-ui/react-label',
+          '@radix-ui/react-tooltip',
+          '@webcontainer/api',
+          'ai',
+          'chalk',
+          'class-variance-authority',
+          'diff',
+          'file-saver',
+          'framer-motion',
+          'ignore',
+          'isbot',
+          'isomorphic-git',
+          'isomorphic-git/http/web',
+          'istextorbinary',
+          'js-cookie',
+          'jszip',
+          'lucide-react',
+          'nanostores',
+          'ollama-ai-provider-v2',
+          'path-browserify',
+          'react-dnd',
+          'react-dnd-html5-backend',
+          'react-qrcode-logo',
+          'react-toastify',
+          'react-window',
+          'rehype-raw',
+          'rehype-sanitize',
+          'remark-gfm',
+          'remix-utils/client-only',
+          'unist-util-visit',
+          'zod',
+          'zustand',
+          ],
+        },
+      },
       client: {
         /*
          * React Router reads `build/client/.vite/manifest.json` while bundling the
