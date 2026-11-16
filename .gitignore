@@ -50,8 +50,6 @@ app/commit.json
 changelogUI.md
 docs/instructions/Roadmap.md
 .cursorrules
-*.md
-!docs/mcp-tool-migration.md
 .qodo
 
 test-results/
@@ -61,3 +59,4 @@ playwright-report
 test-results
 test-results.json
 test-results-summary.txt
+skills/

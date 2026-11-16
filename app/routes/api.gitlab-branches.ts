@@ -39,7 +39,7 @@ async function gitlabBranchesLoader({ request }: { request: Request }) {
       headers: {
         Authorization: `Bearer ${token}`,
         Accept: 'application/json',
-        'User-Agent': 'ai-app-builder-app',
+        'User-Agent': 'codemasti-app',
       },
     });
 
@@ -72,7 +72,7 @@ async function gitlabBranchesLoader({ request }: { request: Request }) {
       headers: {
         Authorization: `Bearer ${token}`,
         Accept: 'application/json',
-        'User-Agent': 'ai-app-builder-app',
+        'User-Agent': 'codemasti-app',
       },
     });
 

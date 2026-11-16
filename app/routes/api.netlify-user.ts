@@ -21,7 +21,7 @@ async function netlifyUserLoader({ request, context }: { request: Request; conte
     const response = await fetch('https://api.netlify.com/api/v1/user', {
       headers: {
         Authorization: `Bearer ${netlifyToken}`,
-        'User-Agent': 'ai-app-builder-app',
+        'User-Agent': 'codemasti-app',
       },
     });
 
@@ -90,7 +90,7 @@ async function netlifyUserAction({ request, context }: { request: Request; conte
         headers: {
           Authorization: `Bearer ${netlifyToken}`,
           'Content-Type': 'application/json',
-          'User-Agent': 'ai-app-builder-app',
+          'User-Agent': 'codemasti-app',
         },
       });
 

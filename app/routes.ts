@@ -18,6 +18,8 @@ export default [
   { file: 'routes/starter.tsx', path: '/starter' },
   { file: 'routes/webcontainer.connect.$id.tsx', path: '/webcontainer/connect/:id' },
   { file: 'routes/webcontainer.preview.$id.tsx', path: '/webcontainer/preview/:id' },
+  { file: 'routes/robots.txt.ts', path: '/robots.txt' },
+  { file: 'routes/sitemap.xml.ts', path: '/sitemap.xml' },
   { file: 'routes/api.bug-report.ts', path: '/api/bug-report' },
   { file: 'routes/api.chat.ts', path: '/api/chat' },
   { file: 'routes/api.check-env-key.ts', path: '/api/check-env-key' },

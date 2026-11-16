@@ -22,30 +22,30 @@ const customIconCollection = iconPaths.reduce(
 const BASE_COLORS = {
   white: '#FFFFFF',
   gray: {
-    50: '#FAFAFA',
-    100: '#F5F5F5',
-    200: '#E5E5E5',
-    300: '#D4D4D4',
-    400: '#A3A3A3',
-    500: '#737373',
-    600: '#525252',
-    700: '#404040',
-    800: '#262626',
-    900: '#171717',
-    950: '#0A0A0A',
+    50: '#F8F9FB',
+    100: '#F1F3F6',
+    200: '#E3E7EC',
+    300: '#CBD1DA',
+    400: '#98A1AF',
+    500: '#6B7482',
+    600: '#4B5361',
+    700: '#353B47',
+    800: '#232832',
+    900: '#171B23',
+    950: '#0E1116',
   },
   accent: {
-    50: '#F8F5FF',
-    100: '#F0EBFF',
-    200: '#E1D6FF',
-    300: '#CEBEFF',
-    400: '#B69EFF',
-    500: '#9C7DFF',
-    600: '#8A5FFF',
-    700: '#7645E8',
-    800: '#6234BB',
-    900: '#502D93',
-    950: '#2D1959',
+    50: '#FFF7ED',
+    100: '#FFEDD5',
+    200: '#FED7AA',
+    300: '#FDBA74',
+    400: '#FB923C',
+    500: '#F97316',
+    600: '#EA580C',
+    700: '#C2410C',
+    800: '#9A3412',
+    900: '#7C2D12',
+    950: '#431407',
   },
   green: {
     50: '#F0FDF4',
@@ -89,6 +89,10 @@ const BASE_COLORS = {
 
 const COLOR_PRIMITIVES = {
   ...BASE_COLORS,
+
+  // Legacy utilities (purple-*, violet-*) resolve to the single product accent.
+  purple: BASE_COLORS.accent,
+  violet: BASE_COLORS.accent,
   alpha: {
     white: generateAlphaPalette(BASE_COLORS.white),
     gray: generateAlphaPalette(BASE_COLORS.gray[900]),
@@ -119,7 +123,15 @@ export default defineConfig({
         elements: {
           borderColor: 'var(--bolt-elements-borderColor)',
           borderColorActive: 'var(--bolt-elements-borderColorActive)',
+          // Aliases used by shared primitives (Input, Badge, Card...). They were previously undefined,
+          // which made those borders, rings and surfaces render as nothing.
+          border: 'var(--bolt-elements-borderColor)',
+          'borderColor-dark': 'var(--bolt-elements-borderColor)',
+          'textSecondary-dark': 'var(--bolt-elements-textSecondary)',
+          ring: 'var(--bolt-elements-borderColorActive)',
+          focus: 'var(--bolt-elements-borderColorActive)',
           background: {
+            DEFAULT: 'var(--bolt-elements-bg-depth-2)',
             depth: {
               1: 'var(--bolt-elements-bg-depth-1)',
               2: 'var(--bolt-elements-bg-depth-2)',
